@@ -6,5 +6,5 @@ import com.projeto.springboot.model.Contato;
 
 public interface ContatoRepository extends JpaRepository<Contato, Long> {
     
-    
+    Contato findByNome(String nome);
 }
